@@ -58,6 +58,12 @@ h6 {
     text-transform: none;
 }
 
+p {font-family: Poppins, Helvetica, Arial, sans-serif;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: none;}
+
 a {
 	text-decoration: none !important;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -213,6 +219,7 @@ iframe {
 }
 
 
+
 /* ================================= */
 /* ::::::::::: 2. Header ::::::::::: */
 /* ================================= */
@@ -225,9 +232,22 @@ header {
     position: relative;
 }
 
-.header .logo img {
-    width: 150px; 
-    height: auto;
+header .logo {
+    font-size: 17px;
+    font-weight: 500;
+    padding-top: 13px;
+    font-family: "Poppins", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    z-index: 9999;
+    letter-spacing: 1px;
+}
+
+header .logo a {
+    text-decoration: none;
+    border: 2px solid #000;
+    padding: 6px 15px;
 }
 
 .parallax {
@@ -3197,7 +3217,7 @@ position: absolute;
         margin-left: 5px;
     }
     header .logo {
-        max-width: 150px;
+        width: 150px;
     }
     .single-navigation .next-button, 
   .single-navigation .prev-button
@@ -3281,3 +3301,10 @@ position: absolute;
   float: none;
 }
 }
+
+
+
+
+/* Bespoke */
+
+.pb-20 {padding-bottom: 20px;} 
