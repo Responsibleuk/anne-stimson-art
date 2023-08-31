@@ -225,15 +225,9 @@ header {
     position: relative;
 }
 
-header .logo {
-    max-width: 150px;
-    max-height: auto;
-}
-
-header .logo a {
-    text-decoration: none;
-    
-    padding: 6px 15px;
+.header .logo img {
+    width: 150px; 
+    height: auto;
 }
 
 .parallax {
@@ -3203,7 +3197,7 @@ position: absolute;
         margin-left: 5px;
     }
     header .logo {
-        width: 150px;
+        max-width: 150px;
     }
     .single-navigation .next-button, 
   .single-navigation .prev-button
