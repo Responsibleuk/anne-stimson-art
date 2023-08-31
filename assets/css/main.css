@@ -1,10 +1,4 @@
 /*
-    Bernd - Clean & Minimal Portfolio HTML5 Template
-    Version: 1.0.1
-    Author: Mountain-Themes
-    Author URL: https://themeforest.net/user/mountain-themes
-    Bernd © 2023. Design & Coded by Mountain-Themes.
-    
     TABLE OF CONTENTS
     ---------------------------
      1. General
@@ -546,8 +540,8 @@ nav {
 }
 
 .cbp.fadeAnim .cbp-item:hover img {
-  -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+  -webkit-transform: scale(1.03);
+    transform: scale(1.03);
 }
 
 .cbp.fadeAnim .cbp-item img {
@@ -3308,3 +3302,12 @@ position: absolute;
 /* Bespoke */
 
 .pb-20 {padding-bottom: 20px;} 
+
+.pt-200 {padding-top: 200px;} 
+
+.pb-pt-50 {padding-top: 50px;
+    padding-bottom: 50px;} 
+
+
+
+    

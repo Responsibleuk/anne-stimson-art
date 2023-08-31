@@ -231,7 +231,7 @@
 
   $('#grid-mosaic').cubeportfolio({
     filters: '.portfolioFilter',
-    layoutMode: 'masonry',
+    layoutMode: 'mosaic',
     sortByDimension: true,
     mediaQueries: [{
       width: 1500,
