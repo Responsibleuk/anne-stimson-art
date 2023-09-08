@@ -3308,6 +3308,11 @@ position: absolute;
 .pb-pt-50 {padding-top: 50px;
     padding-bottom: 50px;} 
 
+    .pb-pt-25 {padding-top: 25px;
+        padding-bottom: 25px;} 
+
+        .bold {font-weight: bold;}
+
 
 
     
