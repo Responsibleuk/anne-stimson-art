@@ -1987,7 +1987,7 @@ text-align: left;
 /* ================================= */
 
 footer {
-    padding: 80px;
+    padding: 40px;
     width: 100%;
     overflow: hidden;
     color: #fff;
@@ -2036,7 +2036,13 @@ footer .social-icons ul {
 }
 
 footer .copyright {
-    float: right;
+    float: centre;
+        margin-top: 12px;
+
+}
+
+footer .privacy {
+    float: centre;
         margin-top: 12px;
 
 }
