@@ -232,7 +232,7 @@
   $('#grid-mosaic').cubeportfolio({
     filters: '.portfolioFilter',
     layoutMode: 'mosaic',
-    sortByDimension: true,
+    sortByDimension: false,
     mediaQueries: [{
       width: 1500,
       cols: 3,
