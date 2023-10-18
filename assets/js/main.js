@@ -903,3 +903,27 @@
   }
 
   });
+
+
+
+  // lightbox
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const lightbox = document.querySelector(".lightbox");
+    const lightboxImage = lightbox.querySelector("img");
+    const lightboxClose = document.querySelector(".lightbox-close");
+    const lightboxLinks = document.querySelectorAll(".lightbox-link");
+
+    lightboxLinks.forEach(function (link) {
+        link.addEventListener("click", function (e) {
+            e.preventDefault();
+            lightboxImage.src = this.getAttribute("href");
+            lightbox.style.display = "block";
+        });
+    });
+
+    lightboxClose.addEventListener("click", function () {
+        lightbox.style.display = "none";
+    });
+});
