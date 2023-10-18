@@ -232,7 +232,7 @@
   $('#grid-mosaic').cubeportfolio({
     filters: '.portfolioFilter',
     layoutMode: 'mosaic',
-    sortByDimension: false,
+    sortByDimension: true,
     mediaQueries: [{
       width: 1500,
       cols: 3,
@@ -264,7 +264,48 @@
       loadMore: {
         element: '.load-more',
         action: 'click',
-        loadItems: 3,
+        loadItems: 15,
+      }
+    },
+  });
+
+  
+  $('#grid-masonry').cubeportfolio({
+    filters: '.portfolioFilter',
+    layoutMode: 'masonry',
+    sortByDimension: true,
+    mediaQueries: [{
+      width: 1500,
+      cols: 3,
+    }, {
+      width: 1100,
+      cols: 3,
+    }, {
+      width: 800,
+      cols: 2,
+    }, {
+      width: 480,
+      cols: 1,
+      options: {
+        caption: '',
+        gapHorizontal: 15,
+        gapVertical: 15,
+      }
+    }],
+    defaultFilter: '*',
+    animationType: 'quicksand',
+    gapHorizontal: 65,
+    gapVertical: 65,
+    gridAdjustment: 'responsive',
+    caption: 'zoom',
+    displayType: 'sequentially',
+    displayTypeSpeed: 100,
+
+    plugins: {
+      loadMore: {
+        element: '.load-more',
+        action: 'click',
+        loadItems: 18,
       }
     },
   });
@@ -304,7 +345,7 @@
       loadMore: {
         element: '.load-more',
         action: 'click',
-        loadItems: 3,
+        loadItems: 15,
       }
     },
   });
@@ -315,10 +356,10 @@
     sortByDimension: true,
     mediaQueries: [{
       width: 1500,
-      cols: 1,
+      cols: 2,
     }, {
       width: 1100,
-      cols: 1,
+      cols: 2,
     }, {
       width: 800,
       cols: 1,
@@ -344,7 +385,7 @@
       loadMore: {
         element: '.load-more',
         action: 'click',
-        loadItems: 3,
+        loadItems: 15,
       }
     },
   });
@@ -384,7 +425,7 @@
       loadMore: {
         element: '.load-more',
         action: 'click',
-        loadItems: 3,
+        loadItems: 15,
       }
     },
   });
@@ -903,28 +944,3 @@
   }
 
   });
-
-
-
-  // lightbox
-
-
-  document.addEventListener("DOMContentLoaded", function () {
-    const lightbox = document.querySelector(".lightbox");
-    const lightboxImage = lightbox.querySelector("img");
-    const lightboxClose = document.querySelector(".lightbox-close");
-    const lightboxLinks = document.querySelectorAll(".lightbox-link");
-
-    lightboxLinks.forEach(function (link) {
-        link.addEventListener("click", function (e) {
-            e.preventDefault();
-            lightboxImage.src = this.getAttribute("href");
-            lightbox.style.display = "block";
-        });
-    });
-
-    lightboxClose.addEventListener("click", function () {
-        lightbox.style.display = "none";
-    });
-});
-
