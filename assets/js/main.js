@@ -927,3 +927,4 @@
         lightbox.style.display = "none";
     });
 });
+
