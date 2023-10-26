@@ -335,7 +335,7 @@
     defaultFilter: '*',
     animationType: 'quicksand',
     gapHorizontal: 65,
-    gapVertical: 65,
+    gapVertical: 15,
     gridAdjustment: 'responsive',
     caption: 'zoom',
     displayType: 'sequentially',
