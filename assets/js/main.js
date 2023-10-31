@@ -345,7 +345,7 @@
       loadMore: {
         element: '.load-more',
         action: 'click',
-        loadItems: 15,
+        loadItems: 18,
       }
     },
   });
